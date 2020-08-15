@@ -1,0 +1,61 @@
+@import "../variables.scss";
+
+.categoryTitle {
+  span {
+    font-variant: small-caps;
+    font-size: 36px;
+  }
+}
+.movieList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.movieCard {
+  width: calc(33% - 20px);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 10px;
+  padding: 0 10px 10px;
+  border-radius: 6px;
+  background-color: $kermit-very-transparent;
+  text-decoration: none;
+  line-height: 16px;
+  cursor: pointer;
+  h3 {
+    color: $emerald-dark;
+    text-shadow: 3px 4px 2px $kermit-light;
+  }
+  img {
+    max-width: 100%;
+    width: 180px;
+    height: 180px;
+    min-height: 180px;
+    margin: 0 auto;
+  }
+  &:hover {
+    box-shadow:  3px 4px 3px gray, -3px 4px 3px gray;
+    h3 {
+    color: $dark-gold;
+    font-weight: bold;
+    text-shadow: 3px 4px 2px $gold;
+  }}
+}
+.loadMore {
+  text-align: center;
+  a {
+    color: $emerald-dark;
+    font-size: 14px;
+    text-shadow: 3px 4px 2px $kermit-light;
+    &:hover {
+      color: $kermit;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      text-shadow: 3px 4px 2px $gold;
+    }
+  }
+}

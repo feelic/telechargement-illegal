@@ -1,0 +1,32 @@
+@import "../variables.scss";
+
+.details {
+
+.pitch {
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $kermit-light;
+  img {
+    width: 50%;
+    height: 290px;
+    flex: 1;
+  }
+  p {
+  flex: 1;
+  padding-left: 20px;
+  }
+}
+
+.form {
+  label {
+    font-size: 12px;
+    display: block;
+  }
+  input {
+    width: 250px;
+  }
+}
+.hadopi {
+  font-size: 10px;
+}
+}

@@ -1,0 +1,132 @@
+@import "./variables.scss";
+
+.appWrapper {
+  max-width: 1400px;
+  margin: 60px auto 0;
+}
+.header {
+  background: linear-gradient(
+    30deg,
+    $kermit-light 20%,
+    $kermit-transparent 80%,
+    $kermit-very-transparent 100%
+  );
+  border: 1px solid $emerald;
+  border-radius: 8px 8px 0 0;
+  padding: 0 20px;
+
+  h1 {
+    font-family: $logoFont;
+    text-transform: lowercase;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    color: $gold;
+    font-size: 48px;
+    letter-spacing: 14px;
+    text-shadow: 3px 4px 2px $dark-gold, 10px 2px 1em $emerald,
+      0 0 0.2em $emerald;
+    .illegal {
+      text-align: right;
+      font-size: 36px;
+      color: $gold;
+      text-shadow: 3px 4px 2px $dark-gold, 10px 2px 1em $gold,
+        0 0 0.2em $dark-gold;
+    }
+    margin-bottom: 5px;
+  }
+  p {
+    margin-top: 0;
+    color: $emerald-dark;
+    text-shadow: 3px 2px 4px $gold;
+    text-align: right;
+  }
+}
+.searchBar {
+  padding: 10px;
+  background: linear-gradient(0deg, $gray 30%, $gray-light 70%);
+  border: 1px solid $emerald-light;
+
+  input {
+    margin-right: 10px;
+    border: 1px solid $dark-gold;
+    outline-color: $kermit-light;
+  }
+}
+.page {
+  display: flex;
+  min-height: 800px;
+  .column {
+    max-width: 240px;
+    padding: 20px;
+    background-color: $background-column;
+
+    .block {
+      border-radius: 5px;
+      border: 1px solid $brownie;
+      background-color: $gold-pastel;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      margin: 5px 0 10px;
+      font-family: $titleFont;
+      letter-spacing: 8px;
+      color: $emerald-dark;
+      text-shadow: 2px 2px 2px $kermit-light;
+    }
+    a {
+      color: $emerald-dark;
+      font-size: 14px;
+      text-shadow: 3px 4px 2px $kermit-light;
+
+      &:hover {
+        color: $kermit;
+        font-weight: bold;
+        font-size: 16px;
+        text-shadow: 3px 4px 2px $gold;
+      }
+    }
+    img {
+      max-width: 100%;
+    }
+    ul {
+      padding: 0 15px;
+    }
+  }
+  main {
+    flex: 1;
+    background-color: #eee;
+    padding: 20px;
+    h2 {
+      font-family: $titleFont;
+      letter-spacing: 8px;
+      color: $emerald-dark;
+      text-shadow: 2px 2px 2px $kermit-light;
+    }
+  }
+}
+.youtubeLink {
+  text-align: center;
+  display: block;
+  margin: 15px 0 0;
+  height: 40px;
+
+  &:hover img {
+    box-shadow: 2px 3px 8px $kermit-light, -2px -3px 8px $kermit,;
+  }
+  img {
+    display: inline;
+    width: 40px;
+    height: 48px;
+
+  }
+}
+.footer {
+  margin: 0 0 10px;
+  padding: 10px;
+  background: linear-gradient(0deg, $gray-dark 30%, $gray 70%);
+  border: 1px solid $emerald-light;
+  border-radius: 0 0 6px 6px;
+  text-align: center;
+}

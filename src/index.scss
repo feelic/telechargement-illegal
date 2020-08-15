@@ -1,0 +1,19 @@
+@import './variables.scss';
+
+body {
+  margin: 0;
+  font-family: 'Red Rose';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #444;
+  background-image: url('HABILLAGE_2.png');
+  background-size: 100% 2300px;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-blend-mode: lighten;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

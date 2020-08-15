@@ -1,0 +1,15 @@
+@import "../variables.scss";
+
+.button {
+  background: linear-gradient(-15deg, $kermit-light 30%, $kermit 70%);
+  border-color: $emerald-light;
+  border-radius:6px;
+  transition-property: all;
+  transition-duration: 3s;
+  padding: 4px 12px;
+  &:hover {
+    background: linear-gradient(15deg, $kermit-light 30%, $kermit 70%);
+    border-color: $emerald-dark;
+    outline-color: $emerald-dark;
+  }
+}
