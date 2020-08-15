@@ -20,12 +20,14 @@
     text-transform: lowercase;
     display: flex;
     flex-direction: column;
-    max-width: 600px;
+    width: 600px;
+    max-width: 100%;
     color: $gold;
     font-size: 48px;
     letter-spacing: 14px;
     text-shadow: 3px 4px 2px $dark-gold, 10px 2px 1em $emerald,
       0 0 0.2em $emerald;
+    overflow: hidden;
     .illegal {
       text-align: right;
       font-size: 36px;
@@ -55,6 +57,8 @@
 }
 .page {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   min-height: 800px;
   .column {
     max-width: 240px;
@@ -113,13 +117,12 @@
   height: 40px;
 
   &:hover img {
-    box-shadow: 2px 3px 8px $kermit-light, -2px -3px 8px $kermit,;
+    box-shadow: 2px 3px 8px $kermit-light, -2px -3px 8px $kermit;
   }
   img {
     display: inline;
     width: 40px;
     height: 48px;
-
   }
 }
 .footer {
